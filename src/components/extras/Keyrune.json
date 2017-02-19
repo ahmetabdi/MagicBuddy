@@ -1,0 +1,267 @@
+{
+  // Others use default (59012)
+  "ced": 59012,
+  "cei": 59012,
+  "pdrc": 59012,
+  "plgm": 59012,
+  "rqs": 59012,
+  "pcel": 59012,
+  "mgb": 59012,
+  "itp": 59012,
+  "ppod": 59012,
+  "ppre": 59012,
+  "pjgp": 59012,
+  "palp": 59012,
+  "pwor": 59012,
+  "pwos": 59012,
+  "psus": 59012,
+  "pfnm": 59012,
+  "pelp": 59012,
+  "prel": 59012,
+  "p2hg": 59012,
+  "pgtw": 59012,
+  "pcmp": 59012,
+  "cst": 59012,
+  "tsb": 59012,
+  "phho": 59012,
+  "mps": 59012,
+  "frf_ugin": 59012,
+  "dd3_jvc": 59012,
+  "dd3_gvl": 59012,
+  "dd3_evg": 59012,
+  "dd3_dvd": 59012,
+  "cpk": 59012,
+  "pwcq": 59012,
+  "pwpn": 59012,
+  "p15a": 59012,
+  "plpa": 59012,
+  "pmgd": 59012,
+  "pgpx": 59012,
+  "ppro": 59012,
+  "pmpr": 59012,
+  // Core
+  "lea": 58880,
+  "leb": 58881,
+  "2ed": 58882,
+  "3ed": 58883,
+  "4ed": 58884,
+  "psum": 58885,
+  "5ed": 58886,
+  "6ed": 58887,
+  "7ed": 58888,
+  "8ed": 58889,
+  "9ed": 58890,
+  "10e": 58891,
+  "m10": 58892,
+  "m11": 58893,
+  "m12": 58894,
+  "m13": 58895,
+  "m14": 58896,
+  "m15": 58897,
+  "bcore": 58898,
+  "ori": 59031,
+  /**
+  * Expansions */
+  /* Artifact Block */
+  "arn": 58899,
+  "atq": 58900,
+  "leg": 58901,
+  /* Wizards Block */
+  "drk": 58902,
+  "fem": 58903,
+  "hml": 58904,
+  /* Ice Age Block */
+  "ice": 58905,
+  "all": 58906,
+  "csp": 58907,
+  /* Mirage Block */
+  "mir": 58908,
+  "vis": 58909,
+  "wth": 58910,
+  /* Tempest Block */
+  "tmp": 58911,
+  "sth": 58912,
+  "exo": 58913,
+  /* Urza's Block */
+  "usg": 58914,
+  "ulg": 58915,
+  "uds": 58916,
+  /* Mercadian Block */
+  "mmq": 58917,
+  "nms": 58918,
+  "pcy": 58919,
+  /* Invasion Block */
+  "inv": 58920,
+  "pls": 58921,
+  "apc": 58922,
+  /* Odyssey Block */
+  "ody": 58923,
+  "tor": 58924,
+  "jud": 58925,
+  /* Onslaught Block */
+  "ons": 58926,
+  "lgn": 58927,
+  "scg": 58928,
+  /* Mirrodin Block */
+  "mrd": 58929,
+  "dst": 58930,
+  "5dn": 58931,
+  /* Kamigawa Block */
+  "chk": 58932,
+  "bok": 58933,
+  "sok": 58934,
+  /* Ravnica Block */
+  "rav": 58935,
+  "gpt": 58936,
+  "dis": 58937,
+  /* Time Spiral Block */
+  "tsp": 58938,
+  "plc": 58939,
+  "fut": 58940,
+  /* Lorwyn Block */
+  "lrw": 58941,
+  "mor": 58942,
+  /* Shadowmoor Block */
+  "shm": 58943,
+  "eve": 58944,
+  /* Alara Block */
+  "ala": 58945,
+  "con": 58946,
+  "arb": 58947,
+  /* Zendikar Block */
+  "zen": 58948,
+  "wwk": 58949,
+  "roe": 58950,
+  /* Scars Block */
+  "som": 58951,
+  "mbs": 58952,
+  "nph": 58953,
+  /* Innistrad Block */
+  "isd": 58954,
+  "dka": 58955,
+  "avr": 58956,
+  /* RTR Block */
+  "rtr": 58957,
+  "gtc": 58958,
+  "dgm": 58959,
+  /* Theros Block */
+  "ths": 58960,
+  "bng": 58961,
+  "jou": 58962,
+  /* Khans Block */
+  "ktk": 58963,
+  "frf": 58964,
+  "dtk": 59027,
+  /* Return to Zendikar Block */
+  "bfz": 59033,
+  "ogw": 59649,
+  /* Return to Innistrad Block */
+  "soi": 59650,
+  "emn": 59659,
+  /* Kaladesh Block */
+  "kld": 59662,
+  "aer": 59663,
+  /* Amonkhet Block */
+  "akh": 59668,
+  /**
+  * Command Zone */
+  "van": 58709,
+  "hop": 58710,
+  "arc": 58711,
+  "cmd": 58712,
+  "pc2": 58713,
+  "cm1": 58714,
+  "c13": 58715,
+  "cns": 58716,
+  "c14": 58973,
+  "c15": 59648,
+  "cn2": 59652,
+  "c16": 59664,
+  "pca": 59665,
+  /**
+  * Reprint */
+  "chr": 58974,
+  "ath": 58975,
+  "brb": 58976,
+  "btd": 58977,
+  "dkm": 58978,
+  "mma": 58979,
+  "mm2": 58980,
+  "ema": 58981,
+  "mm3": 59666,
+  /**
+  * Beginner */
+  "por": 58980,
+  "po2": 58981,
+  "ptk": 58982,
+  "s99": 58983,
+  "s00": 58984,
+  "w16": 59655,
+  /**
+  * Duel Decks */
+  "evg": 58985,
+  "dd2": 58986,
+  "ddc": 58987,
+  "ddd": 58988,
+  "dde": 58989,
+  "ddf": 58990,
+  "ddg": 58991,
+  "ddh": 58992,
+  "ddi": 58993,
+  "ddj": 58994,
+  "ddk": 58995,
+  "ddl": 58996,
+  "ddm": 58997,
+  "ddn": 58998,
+  "ddo": 58999,
+  "ddp": 59032,
+  "ddq": 59656,
+  "ddr": 59661,
+  /**
+  * From the Vault */
+  "drb": 59000,
+  "v09": 59001,
+  "v10": 59002,
+  "v11": 59003,
+  "v12": 59004,
+  "v13": 59005,
+  "v14": 59006,
+  "v15": 59653,
+  "v16": 59654,
+  /**
+  * Premium Deck Series */
+  "h09": 59007,
+  "pd2": 59008,
+  "pd3": 59009,
+  "md1": 59010,
+  /**
+  * Promotional */
+  "pgru": 59011,
+  "pmtg1": 59012,
+  "pmtg2": 59013,
+  "pleaf": 59014,
+  "pmei": 59015,
+  "parl": 59016,
+  "dpa": 59017,
+  "pbook": 59018,
+  "past": 59019,
+  "parl2": 59020,
+  "exp": 59034,
+  "psalvat05": 59657,
+  "psalvat11": 59658,
+  "mp1": 59667,
+  "pxbox": 59669,
+  /**
+  * Online */
+  "med": 59021,
+  "me2": 59022,
+  "me3": 59023,
+  "me4": 59024,
+  "tpr": 59028,
+  "vma": 59030,
+  "xlcu": 59660,
+  /**
+  * Un-serious */
+  "ugl": 59025,
+  "unh": 59026
+}

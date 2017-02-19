@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import { Platform, Navigator, StyleSheet, TouchableHighlight } from 'react-native'
+import { Platform, Navigator, StyleSheet, TouchableHighlight, Text } from 'react-native'
 import NavTitleComponent from 'HSNavTitleComponent'
 import NavTitleIcon from 'HSNavTitleIcon'
 import colors from 'HSColors'
@@ -14,14 +14,12 @@ let styles = {}
 const NavigationBar = (toggleSideMenu) => {
   const src = require('../../images/logo.png')
   const LeftButton = (route, navigator, index, navState) => {
-    if (route.name !== 'home') {
-      return null
-    }
     if (index > 0) {
       const leftAction = navigator.pop
       const leftIcon = 'chevron-left'
       return (
         <Icon
+          style={{marginTop: 7, marginLeft: 9, color: 'white'}}
           onPress={leftAction}
           name={leftIcon} size={28} />
       )
@@ -41,17 +39,31 @@ const NavigationBar = (toggleSideMenu) => {
   }
 
   const RightButton = (/* route, navigator, index, navState */) => {
-    return null
+    return (
+      <TouchableHighlight
+        style={{marginTop: 7, marginRight: 9}}
+        onPress={this.onPressButton}
+        underlayColor='transparent'>
+        <Icon
+          color='white'
+          name='settings'
+          size={28}
+        />
+      </TouchableHighlight>
+    )
   }
 
   const Title = (route, navigator, index, navState) => {
-    if (route.title) {
-      return (
-        <NavTitleComponent title={route.title} />
-      )
-    }
+    // if (route.title) {
+    //   return (
+    //     <NavTitleComponent title={route.title} />
+    //   )
+    // }
+    // return (
+    //   <NavTitleIcon src={src} />
+    // )
     return (
-      <NavTitleIcon src={src} />
+      <Text style={{color: '#fff', marginLeft: 5, marginRight: 5, marginTop: 12, fontFamily: 'Shoes Center', fontSize: 26}}>Magic Buddy</Text>
     )
   }
 
@@ -70,7 +82,7 @@ const NavigationBar = (toggleSideMenu) => {
 styles = StyleSheet.create({
   navBar: {
     height: 65,
-    backgroundColor: colors.grey1,
+    backgroundColor: 'steelblue',
     ...Platform.select({
       android: {
         height: 55

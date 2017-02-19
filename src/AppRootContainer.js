@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import { View, StyleSheet, Image } from 'react-native'
 import App from './App'
-import {
-  List,
-  ListItem,
-  SideMenu
-} from 'react-native-elements'
+import { List, ListItem, SideMenu } from 'react-native-elements'
+import * as realm from 'realm-wrapper'
 
 const RNFS = require('react-native-fs');
 const realm_lock_path = RNFS.DocumentDirectoryPath + '/bundled.realm.lock'
@@ -26,6 +23,8 @@ class AppRootContainer extends Component {
     RNFS.copyFile(realm_bundle_path, realm_path)
     .then((success) => {
       console.log('default.realm copied from MainBundlePath to DocumentDirectoryPath!');
+      realm.closeDatabase()
+      realm.openDatabase()
     })
     .catch((err) => {
       console.log("ERROR: " + err.message);
@@ -33,8 +32,12 @@ class AppRootContainer extends Component {
   }
 
   deleteFile(path) {
-    RNFS.unlink(path).then(() => {
+    RNFS.unlink(path)
+    .then(() => {
       console.log('File deleted at: ' + path)
+    })
+    .catch((err) => {
+      console.log("ERROR: " + err.message);
     });
   }
 
@@ -45,12 +48,20 @@ class AppRootContainer extends Component {
   }
 
   componentWillMount() {
+    console.log('================================================')
     console.log('MainBundlePath: ' + RNFS.MainBundlePath)
     console.log('DocumentsDir: ' + RNFS.DocumentDirectoryPath)
     this.deleteFile(realm_lock_path)
     this.deleteFile(realm_management_path)
     this.deleteFile(realm_path)
-    this.copyRealmBundle();
+    this.copyRealmBundle()
+    console.log('================================================')
+  }
+
+  sideMenuChanged(isOpen) {
+    this.setState({
+      isOpen: isOpen
+    })
   }
 
   render () {
@@ -111,6 +122,7 @@ class AppRootContainer extends Component {
     return (
       <SideMenu
         isOpen={this.state.isOpen}
+        onChange={(isOpen) => this.sideMenuChanged(isOpen)}
         menu={MenuComponent}>
         <App toggleSideMenu={this.toggleSideMenu.bind(this)} />
       </SideMenu>

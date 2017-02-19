@@ -4,6 +4,7 @@ import colors from 'HSColors'
 import socialColors from 'HSSocialColors'
 import fonts from 'HSFonts'
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import SetListTable from 'SetListTable'
 
 import {
   Text,
@@ -15,11 +16,18 @@ import {
 
 let styles = {}
 
-const log = () => {
-  console.log('hello!')
-}
-
 class Home extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  goToSetList = () => {
+    this.props.navigator.push({
+      component: SetListTable,
+      name: 'set_list'
+    })
+  }
+
   render () {
     const { toggleSideMenu } = this.props
     return (
@@ -30,8 +38,13 @@ class Home extends Component {
         </View>
         <Button
           backgroundColor={socialColors.facebook}
+          onPress={this.goToSetList.bind(this)}
+          title='Search Sets'
+          buttonStyle={styles.button} />
+        <Button
+          backgroundColor={socialColors.facebook}
           onPress={() => log()}
-          title='BUTTON'
+          title='Search Cards'
           buttonStyle={styles.button} />
         <Button
           buttonStyle={styles.button}
