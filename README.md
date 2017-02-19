@@ -1,29 +1,31 @@
-![React Native Hackathon Starter & UI Toolkit](http://i.imgur.com/kJA1dU0.png)
-### React Native Starter Project and UI Boilerplate using [React Native Elements](https://github.com/dabit3/React-Native-Elements)
-
-![React Native UI Toolkit](http://i.imgur.com/tqxDeoG.png)
+# MagicBuddy
+MTG App in react-native
 
 ## Get Started
 
-1 clone Project
+### Clone Project
 
 ```
-git clone git@github.com:dabit3/react-native-hackathon-starter.git
+git clone git@github.com:ahmetabdi/MagicBuddy.git
 ```
 
-2 install dependencies
+### Install dependencies
 
 ```
 npm i
 ```
 
-3 link dependencies for react-native
+### Link dependencies for react-native
 
 ```
 react-native link
 ```
 
-4 run project
+### run project
+
+```
+react-native run-ios
+react-native run-android
+```
 
 The API for React Native Elements is located [here](https://github.com/dabit3/React-Native-Elements).
-
