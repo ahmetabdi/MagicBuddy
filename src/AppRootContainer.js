@@ -7,6 +7,12 @@ import {
   SideMenu
 } from 'react-native-elements'
 
+const RNFS = require('react-native-fs');
+const realm_lock_path = RNFS.DocumentDirectoryPath + '/bundled.realm.lock'
+const realm_management_path = RNFS.DocumentDirectoryPath + '/bundled.realm.management'
+const realm_bundle_path = RNFS.MainBundlePath + '/bundled.realm'
+const realm_path = RNFS.DocumentDirectoryPath + '/bundled.realm'
+
 class AppRootContainer extends Component {
   constructor () {
     super()
@@ -16,10 +22,35 @@ class AppRootContainer extends Component {
     this.toggleSideMenu = this.toggleSideMenu.bind(this)
   }
 
+  copyRealmBundle() {
+    RNFS.copyFile(realm_bundle_path, realm_path)
+    .then((success) => {
+      console.log('default.realm copied from MainBundlePath to DocumentDirectoryPath!');
+    })
+    .catch((err) => {
+      console.log("ERROR: " + err.message);
+    });
+  }
+
+  deleteFile(path) {
+    RNFS.unlink(path).then(() => {
+      console.log('File deleted at: ' + path)
+    });
+  }
+
   toggleSideMenu () {
     this.setState({
       isOpen: !this.state.isOpen
     })
+  }
+
+  componentWillMount() {
+    console.log('MainBundlePath: ' + RNFS.MainBundlePath)
+    console.log('DocumentsDir: ' + RNFS.DocumentDirectoryPath)
+    this.deleteFile(realm_lock_path)
+    this.deleteFile(realm_management_path)
+    this.deleteFile(realm_path)
+    this.copyRealmBundle();
   }
 
   render () {

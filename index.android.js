@@ -2,8 +2,8 @@ import React from 'react'
 import { AppRegistry } from 'react-native'
 import AppRootContainer from './src/AppRootContainer'
 
-const HackathonStarter = () => (
+const MagicBuddy = () => (
   <AppRootContainer />
 )
 
-AppRegistry.registerComponent('HackathonStarter', () => HackathonStarter)
+AppRegistry.registerComponent('MagicBuddy', () => MagicBuddy)
