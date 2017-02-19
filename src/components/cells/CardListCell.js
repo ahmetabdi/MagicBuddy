@@ -1,5 +1,5 @@
 /**
- * @providesModule SetListCell
+ * @providesModule CardListItem
  */
 
 import React from 'react';
@@ -9,19 +9,20 @@ import { createIconSet } from 'react-native-vector-icons';
 import glyphMap from '../extras/Keyrune.json'
 const MagicIcon = createIconSet(glyphMap, 'Keyrune');
 import styles from './styles';
-import CardListTable from 'CardListTable'
+// import { cardColour } from './helpers'
+import * as helper from 'Helper'
 
-export default class SetListItem extends React.Component {
+export default class CardListItem extends React.Component {
   constructor(props) {
     super(props);
   }
 
   onPressButton = () => {
+    console.log('TouchableHighlight pressed...');
     this.props.navigator.push({
-      component: CardListTable,
-      name: 'card_list',
+      name: 'CardView',
       passProps: {
-        set: this.props.item
+        card: this.props.item
       }
     })
   }
@@ -40,7 +41,7 @@ export default class SetListItem extends React.Component {
   renderLeftSide() {
     return (
       <View style={styles.listItemSetIcon}>
-        <MagicIcon name={this.props.item.code.toLowerCase()} size={30} color="#000" />
+        <MagicIcon name={this.props.item.set.code.toLowerCase()} size={30} color={helper.cardColour(this.props.item.rarity)} />
       </View>
     );
   }

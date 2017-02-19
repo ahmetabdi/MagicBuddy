@@ -1,23 +1,23 @@
 /**
- * @providesModule SetListTable
+ * @providesModule CardListTable
  */
 
 import React, { Component } from 'react'
 import { Dimensions, View } from 'react-native'
 import { SearchBar } from 'react-native-elements'
 import { ListView } from 'realm/react-native'
-import SetListCell from 'SetListCell'
+import CardListItem from 'CardListItem'
 import * as realm from 'realm-wrapper'
 
 const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 const {height, width} = Dimensions.get('window');
 
-export default class SetListTable extends React.Component {
+export default class CardListTable extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      data: realm.getAllSets(),
-      originalData: realm.getAllSets(),
+      data: this.props.set.cards.sorted([['number', true]]).snapshot(),
+      originalData: this.props.set.cards.sorted([['number', true]]).snapshot(),
     }
   }
 
@@ -26,7 +26,7 @@ export default class SetListTable extends React.Component {
       this.setState({ data: this.state.originalData })
     }
     else {
-      var newData = this.state.originalData.filtered('name CONTAINS[c] "'+text+'"').sorted([['releaseDate', true]]).snapshot();
+      var newData = this.state.originalData.filtered('name CONTAINS[c] "'+text+'"').sorted([['number', true]]).snapshot();
       this.setState({ data: newData })
     }
   }
@@ -53,7 +53,7 @@ export default class SetListTable extends React.Component {
 
   renderRow(item, sectionIndex, rowIndex) {
     return (
-      <SetListCell item={item} navigator={this.props.navigator} />
+      <CardListItem item={item} navigator={this.props.navigator} />
     )
   }
 }

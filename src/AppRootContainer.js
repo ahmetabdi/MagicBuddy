@@ -64,6 +64,10 @@ class AppRootContainer extends Component {
     })
   }
 
+  sideMenuClicked(name) {
+    console.log('side menu clicked' + name)
+  }
+
   render () {
     const src = require('./images/logo.png')
 
@@ -89,9 +93,9 @@ class AppRootContainer extends Component {
         subtitle: 'Lead Developer'
       },
       {
-        name: 'Melissa Jones',
+        name: 'Settings',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/nuraika/128.jpg',
-        subtitle: 'CTO'
+        subtitle: 'Configure options'
       }
     ]
 
@@ -107,7 +111,7 @@ class AppRootContainer extends Component {
           list.map((l, i) => (
             <ListItem
               roundAvatar
-              onPress={() => console.log('something')}
+              onPress={() => this.sideMenuClicked(l.name)}
               avatar={l.avatar_url}
               key={i}
               title={l.name}

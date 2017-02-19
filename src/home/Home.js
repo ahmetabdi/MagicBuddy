@@ -5,14 +5,7 @@ import socialColors from 'HSSocialColors'
 import fonts from 'HSFonts'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import SetListTable from 'SetListTable'
-
-import {
-  Text,
-  Button,
-  Grid,
-  Col,
-  Row
-} from 'react-native-elements'
+import { Text, Button, Grid, Col, Row } from 'react-native-elements'
 
 let styles = {}
 
@@ -33,18 +26,23 @@ class Home extends Component {
     return (
       <ScrollView style={{backgroundColor: 'white'}}>
         <View style={styles.hero}>
-          <Icon color='white' name='whatshot' size={62} />
-          <Text style={styles.heading}>Buttons</Text>
+          <Image
+            source={require('../images/amonkhet.jpg')}
+            style={{height: 100}} />
         </View>
         <Button
           backgroundColor={socialColors.facebook}
+          iconRight
           onPress={this.goToSetList.bind(this)}
+          icon={{name: 'magnify', type: 'material-community'}}
           title='Search Sets'
           buttonStyle={styles.button} />
         <Button
           backgroundColor={socialColors.facebook}
-          onPress={() => log()}
-          title='Search Cards'
+          iconRight
+          onPress={this.goToSetList.bind(this)}
+          icon={{name: 'magnify', type: 'material-community'}}
+          title='Search Card'
           buttonStyle={styles.button} />
         <Button
           buttonStyle={styles.button}
@@ -174,7 +172,7 @@ styles = StyleSheet.create({
     marginTop: 60,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 40,
+    padding: 0,
     backgroundColor: colors.primary2
   },
   titleContainer: {
