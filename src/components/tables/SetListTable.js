@@ -3,14 +3,13 @@
  */
 
 import React, { Component } from 'react'
-import { Dimensions, View } from 'react-native'
+import { View } from 'react-native'
 import { SearchBar } from 'react-native-elements'
 import { ListView } from 'realm/react-native'
 import SetListCell from 'SetListCell'
 import * as realm from 'realm-wrapper'
 
 const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-const {height, width} = Dimensions.get('window');
 
 export default class SetListTable extends React.Component {
   constructor(props) {
@@ -35,7 +34,7 @@ export default class SetListTable extends React.Component {
     var data = this.state.data;
 
     return (
-      <View style={{marginTop: 65, height: height - 114, backgroundColor: 'white'}}>
+      <View style={{marginTop: 65, flex: 1, backgroundColor: 'white'}}>
         <View>
           <SearchBar
             lightTheme

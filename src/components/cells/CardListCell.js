@@ -3,14 +3,14 @@
  */
 
 import React from 'react';
-import { Text, View, TouchableHighlight } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import { createIconSet } from 'react-native-vector-icons';
+import { Text, View, TouchableHighlight } from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome'
+import { createIconSet } from 'react-native-vector-icons'
 import glyphMap from '../extras/Keyrune.json'
-const MagicIcon = createIconSet(glyphMap, 'Keyrune');
-import styles from './styles';
-// import { cardColour } from './helpers'
+const MagicIcon = createIconSet(glyphMap, 'Keyrune')
+import styles from './styles'
 import * as helper from 'Helper'
+import CardView from 'CardView'
 
 export default class CardListItem extends React.Component {
   constructor(props) {
@@ -18,9 +18,9 @@ export default class CardListItem extends React.Component {
   }
 
   onPressButton = () => {
-    console.log('TouchableHighlight pressed...');
     this.props.navigator.push({
-      name: 'CardView',
+      component: CardView,
+      name: 'card_view',
       passProps: {
         card: this.props.item
       }
