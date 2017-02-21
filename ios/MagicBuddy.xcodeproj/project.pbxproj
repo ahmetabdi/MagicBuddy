@@ -38,6 +38,8 @@
 		C89084E048D94FFE98208F71 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31B4E8451AB14FCA8F94A019 /* Ionicons.ttf */; };
 		DA0729958AD8499A93A389D8 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97A2556EE6BA47CE80041EDF /* MaterialIcons.ttf */; };
 		DADA4C45B2A44375BAD5FF03 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBF581D0246D2AAB8C5A8 /* Entypo.ttf */; };
+		E314BB1A1E5C58A400C4730A /* mana.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E314BB191E5C58A400C4730A /* mana.ttf */; };
+		E314BB381E5C58AB00C4730A /* mplantin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E314BB371E5C58AB00C4730A /* mplantin.ttf */; };
 		E3708E3F1E59D4C300CF008F /* keyrune.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3708E3E1E59D4C300CF008F /* keyrune.ttf */; };
 		E3708E411E59D4CA00CF008F /* Shoes center.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3708E401E59D4CA00CF008F /* Shoes center.ttf */; };
 		E3708E7D1E59D65900CF008F /* bundled.realm in Resources */ = {isa = PBXBuildFile; fileRef = E3708E7C1E59D65900CF008F /* bundled.realm */; };
@@ -288,6 +290,8 @@
 		9AADBF581D0246D2AAB8C5A8 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		A71282B66B2740BEB8075969 /* RealmReact.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RealmReact.xcodeproj; path = "../node_modules/realm/react-native/ios/RealmReact.xcodeproj"; sourceTree = "<group>"; };
 		BAEBEB5CACB84E0A98D3E451 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		E314BB191E5C58A400C4730A /* mana.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mana.ttf; sourceTree = "<group>"; };
+		E314BB371E5C58AB00C4730A /* mplantin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mplantin.ttf; sourceTree = "<group>"; };
 		E3708E3E1E59D4C300CF008F /* keyrune.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = keyrune.ttf; sourceTree = "<group>"; };
 		E3708E401E59D4CA00CF008F /* Shoes center.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shoes center.ttf"; sourceTree = "<group>"; };
 		E3708E7C1E59D65900CF008F /* bundled.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = bundled.realm; sourceTree = "<group>"; };
@@ -525,6 +529,8 @@
 				E3708E7C1E59D65900CF008F /* bundled.realm */,
 				E3708E3E1E59D4C300CF008F /* keyrune.ttf */,
 				E3708E401E59D4CA00CF008F /* Shoes center.ttf */,
+				E314BB191E5C58A400C4730A /* mana.ttf */,
+				E314BB371E5C58AB00C4730A /* mplantin.ttf */,
 				13B07FAE1A68108700A75B9A /* MagicBuddy */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MagicBuddyTests */,
@@ -904,6 +910,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E314BB1A1E5C58A400C4730A /* mana.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				DADA4C45B2A44375BAD5FF03 /* Entypo.ttf in Resources */,
 				6C18BA138A1C476789490136 /* EvilIcons.ttf in Resources */,
@@ -915,6 +922,7 @@
 				1C19D0506F464CFE87E9250F /* MaterialCommunityIcons.ttf in Resources */,
 				E3708E411E59D4CA00CF008F /* Shoes center.ttf in Resources */,
 				DA0729958AD8499A93A389D8 /* MaterialIcons.ttf in Resources */,
+				E314BB381E5C58AB00C4730A /* mplantin.ttf in Resources */,
 				981AB9E1528D4C94ACDB2100 /* Octicons.ttf in Resources */,
 				2E696730A4F64A189EF06947 /* SimpleLineIcons.ttf in Resources */,
 				219BEB5953E247F5AB6303F2 /* Zocial.ttf in Resources */,
