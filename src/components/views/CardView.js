@@ -4,6 +4,10 @@
 
 import React from 'react';
 import { Text, View, Image } from 'react-native';
+import * as helper from 'Helper'
+import { createIconSet } from 'react-native-vector-icons'
+import glyphMap from '../extras/Manarune.json'
+const ManaIcon = createIconSet(glyphMap, 'Mana')
 
 export default class CardView extends React.Component {
   constructor(props) {
@@ -28,8 +32,8 @@ export default class CardView extends React.Component {
         <Text style={{color: '#fff'}}>
           {this.state.card.type}
         </Text>
-        <Text style={{color: '#fff'}}>
-          {this.state.card.text}
+        <Text style={{color: '#fff', fontSize: 16}}>
+          {helper.textIconConverter(this.state.card.text)}
         </Text>
         <Text style={{color: '#fff'}}>
           {this.state.card.flavor}

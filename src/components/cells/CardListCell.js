@@ -6,8 +6,11 @@ import React from 'react';
 import { Text, View, TouchableHighlight } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import { createIconSet } from 'react-native-vector-icons'
-import glyphMap from '../extras/Keyrune.json'
-const MagicIcon = createIconSet(glyphMap, 'Keyrune')
+import magicGlyphMap from '../extras/Keyrune.json'
+const MagicIcon = createIconSet(magicGlyphMap, 'Keyrune')
+import manaGlyphMap from '../extras/Manarune.json'
+const ManaIcon = createIconSet(manaGlyphMap, 'Mana')
+
 import styles from './styles'
 import * as helper from 'Helper'
 import CardView from 'CardView'
@@ -33,6 +36,7 @@ export default class CardListItem extends React.Component {
         <View style={styles.listItem}>
           {this.renderLeftSide()}
           {this.renderText()}
+          {this.renderRightSide()}
         </View>
       </TouchableHighlight>
     );
@@ -44,6 +48,14 @@ export default class CardListItem extends React.Component {
         <MagicIcon name={this.props.item.set.code.toLowerCase()} size={30} color={helper.cardColour(this.props.item.rarity)} />
       </View>
     );
+  }
+
+  renderRightSide() {
+    return (
+      <View style={styles.listItemSetIcon}>
+        {helper.typeIconConverter(this.props.item.type)}
+      </View>
+    )
   }
 
   renderText() {
