@@ -38,6 +38,7 @@ class Home extends Component {
               onPress={this.goToSetList.bind(this)}
               icon={{name: 'magnify', type: 'material-community'}}
               title='Search Sets'
+              fontFamily='Beleren-Bold'
               buttonStyle={{marginTop: 15}} />
             <Button
               backgroundColor={socialColors.facebook}
@@ -45,6 +46,7 @@ class Home extends Component {
               onPress={this.goToSetList.bind(this)}
               icon={{name: 'magnify', type: 'material-community'}}
               title='Search Cards'
+              fontFamily='Beleren-Bold'
               buttonStyle={{marginTop: 15}} />
           </View>
           <Button

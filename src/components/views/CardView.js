@@ -5,9 +5,6 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
 import * as helper from 'Helper'
-import { createIconSet } from 'react-native-vector-icons'
-import glyphMap from '../extras/Manarune.json'
-const ManaIcon = createIconSet(glyphMap, 'Mana')
 
 export default class CardView extends React.Component {
   constructor(props) {
@@ -26,38 +23,21 @@ export default class CardView extends React.Component {
           style={{height: 100, width: 90}}
           source={{uri: cardImageUrl}}
         />
-        <Text style={{color: '#fff'}}>
+        <Text style={{color: '#fff', fontSize: 16, fontFamily: 'Beleren-Bold', marginTop: 20}}>
+          {helper.textIconConverter(this.state.card.manaCost)}
+        </Text>
+        <Text style={{color: '#fff', fontSize: 16, fontFamily: 'Beleren-Bold'}}>
           {this.state.card.name}
         </Text>
-        <Text style={{color: '#fff'}}>
+        <Text style={{color: '#fff', fontSize: 16, fontFamily: 'MPlantin'}}>
           {this.state.card.type}
         </Text>
-        <Text style={{color: '#fff', fontSize: 16}}>
+        <Text style={{color: '#fff', fontSize: 16, fontFamily: 'MPlantin'}}>
           {helper.textIconConverter(this.state.card.text)}
         </Text>
-        <Text style={{color: '#fff'}}>
+        <Text style={{color: '#fff', fontSize: 16, fontFamily: 'MPlantin-italic'}}>
           {this.state.card.flavor}
         </Text>
-        <Text style={{color: '#fff'}}>
-          {this.state.card.imageName}
-        </Text>
-        <Text style={{color: '#fff'}}>
-          {this.state.card.multiverseid}
-        </Text>
-        <Text style={{color: '#fff'}}>
-          {this.state.card.number}
-        </Text>
-        <Text style={{color: '#fff'}}>
-          {this.state.card.rarity}
-        </Text>
-        <Text style={{color: '#fff'}}>
-          {this.state.card.mciNumber}
-        </Text>
-          {/*{
-          {this.state.card.subtypes}
-          {this.state.card.types}
-          {this.state.card.colorIdentity}
-          {this.state.card.colors}*/}
       </View>
     )
   }

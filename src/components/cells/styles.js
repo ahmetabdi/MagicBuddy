@@ -101,7 +101,7 @@ export default StyleSheet.create({
     },
     listItemText: {
         alignSelf: 'center',
-        fontFamily: 'System',
+        fontFamily: 'Beleren-Bold',
         fontSize: 15,
         flexDirection: 'column',
         flex: 1,

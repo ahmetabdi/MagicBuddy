@@ -46,7 +46,12 @@
 		<string>keyrune.ttf</string>
 		<string>Shoes center.ttf</string>
 		<string>mana.ttf</string>
-		<string>mplantin.ttf</string>
+		<string>MPlantin.ttf</string>
+		<string>MPlantin-Italic.ttf</string>
+		<string>MPlantin-Bold.ttf</string>
+		<string>JaceBeleren-Bold.ttf</string>
+		<string>Beleren-Bold.ttf</string>
+		<string>Beleren Small Caps.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

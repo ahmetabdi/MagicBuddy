@@ -64,15 +64,27 @@ export const typeIconConverter = (text) => {
 export const textIconConverter = (text) => {
 
   text = reactStringReplace(text, '{R}', (match, i) => (
-    <ManaIcon key={'r'+i} name="r" color="white" />
+    <View key={'rv'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#FAAA91', width: 17, height: 17, borderRadius: 25}}>
+      <ManaIcon key={'r'+i} name="r" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{G}', (match, i) => (
-    <ManaIcon key={'g'+i} name="g" color="white" />
+    <View key={'gv'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#9CD2AC', width: 17, height: 17, borderRadius: 25}}>
+      <ManaIcon key={'g'+i} name="g" color="black" />
+    </View>
+  ));
+
+  text = reactStringReplace(text, '{W}', (match, i) => (
+    <View key={'wv'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#FFFFD8', width: 17, height: 17, borderRadius: 25}}>
+      <ManaIcon key={'w'+i} name="w" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{B}', (match, i) => (
-    <ManaIcon key={'b'+i} name="b" color="white" />
+    <View key={'bv'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#C6C6C6', width: 17, height: 17, borderRadius: 25}}>
+      <ManaIcon key={'b'+i} name="b" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{E}', (match, i) => (
@@ -88,7 +100,9 @@ export const textIconConverter = (text) => {
   ));
 
   text = reactStringReplace(text, '{1}', (match, i) => (
-    <ManaIcon key={'1'+i} name="1" color="white" />
+    <View key={'1v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'1'+i} name="1" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{2}', (match, i) => (
