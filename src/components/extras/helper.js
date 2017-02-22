@@ -106,79 +106,117 @@ export const textIconConverter = (text) => {
   ));
 
   text = reactStringReplace(text, '{2}', (match, i) => (
-    <ManaIcon key={'2'+i} name="2" color="white" />
+    <View key={'2v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'2'+i} name="2" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{3}', (match, i) => (
-    <ManaIcon key={'3'+i} name="3" color="white" />
+    <View key={'3v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'3'+i} name="3" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{4}', (match, i) => (
-    <ManaIcon key={'4'+i} name="4" color="white" />
+    <View key={'4v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'4'+i} name="4" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{5}', (match, i) => (
-    <ManaIcon key={'5'+i} name="5" color="white" />
+    <View key={'5v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'5'+i} name="5" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{6}', (match, i) => (
-    <ManaIcon key={'6'+i} name="6" color="white" />
+    <View key={'6v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'6'+i} name="6" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{7}', (match, i) => (
-    <ManaIcon key={'7'+i} name="7" color="white" />
+    <View key={'7v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'7'+i} name="7" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{8}', (match, i) => (
-    <ManaIcon key={'8'+i} name="8" color="white" />
+    <View key={'8v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'8'+i} name="8" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{9}', (match, i) => (
-    <ManaIcon key={'9'+i} name="9" color="white" />
+    <View key={'9v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'9'+i} name="9" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{10}', (match, i) => (
-    <ManaIcon key={'10'+i} name="10" color="white" />
+    <View key={'10v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'10'+i} name="10" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{11}', (match, i) => (
-    <ManaIcon key={'11'+i} name="11" color="white" />
+    <View key={'11v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'11'+i} name="11" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{12}', (match, i) => (
-    <ManaIcon key={'12'+i} name="12" color="white" />
+    <View key={'12v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'12'+i} name="12" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{13}', (match, i) => (
-    <ManaIcon key={'13'+i} name="13" color="white" />
+    <View key={'13v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'13'+i} name="13" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{14}', (match, i) => (
-    <ManaIcon key={'14'+i} name="14" color="white" />
+    <View key={'14v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'14'+i} name="14" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{15}', (match, i) => (
-    <ManaIcon key={'15'+i} name="15" color="white" />
+    <View key={'15v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'15'+i} name="15" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{16}', (match, i) => (
-    <ManaIcon key={'16'+i} name="16" color="white" />
+    <View key={'16v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'16'+i} name="16" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{17}', (match, i) => (
-    <ManaIcon key={'17'+i} name="17" color="white" />
+    <View key={'17v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'17'+i} name="17" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{18}', (match, i) => (
-    <ManaIcon key={'18'+i} name="18" color="white" />
+    <View key={'18v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'18'+i} name="18" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{19}', (match, i) => (
-    <ManaIcon key={'19'+i} name="19" color="white" />
+    <View key={'19v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'19'+i} name="19" color="black" />
+    </View>
   ));
 
   text = reactStringReplace(text, '{20}', (match, i) => (
-    <ManaIcon key={'20'+i} name="20" color="white" />
+    <View key={'20v'+i} style={{flex: 1, justifyContent: 'center', alignItems: 'center', alignSelf: 'center', backgroundColor: '#BEB9B2', width: 18, height: 18, borderRadius: 25}}>
+      <ManaIcon key={'20'+i} name="20" color="black" />
+    </View>
   ));
 
   return text
